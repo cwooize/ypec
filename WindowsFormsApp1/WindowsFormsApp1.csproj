@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4980D648-D70B-4270-8BD9-A1D812598E97}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAch.Designer.cs">
+      <DependentUpon>AddAch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddClub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddClub.Designer.cs">
+      <DependentUpon>AddClub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEvents.Designer.cs">
+      <DependentUpon>AddEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddResult.Designer.cs">
+      <DependentUpon>AddResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddReward.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddReward.Designer.cs">
+      <DependentUpon>AddReward.cs</DependentUpon>
+    </Compile>
+    <Compile Include="auth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="auth.Designer.cs">
+      <DependentUpon>auth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="class.Designer.cs">
+      <DependentUpon>class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="club.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="club.Designer.cs">
+      <DependentUpon>club.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\ConnectionString.cs" />
+    <Compile Include="Controller\Query.cs" />
+    <Compile Include="events.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="events.Designer.cs">
+      <DependentUpon>events.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddLearners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLearners.Designer.cs">
+      <DependentUpon>AddLearners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="learners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="learners.Designer.cs">
+      <DependentUpon>learners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="База_данныхDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>База_данныхDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="База_данныхDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>База_данныхDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="База_данныхDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>База_данныхDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="База_данныхDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>База_данныхDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="База_данныхDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>База_данныхDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="База_данныхDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>База_данныхDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="База_данныхDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>База_данныхDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="База_данныхDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>База_данныхDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="База_данныхDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>База_данныхDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="База_данныхDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>База_данныхDataSet7.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAch.resx">
+      <DependentUpon>AddAch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddClub.resx">
+      <DependentUpon>AddClub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEvents.resx">
+      <DependentUpon>AddEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLearners.resx">
+      <DependentUpon>AddLearners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddResult.resx">
+      <DependentUpon>AddResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddReward.resx">
+      <DependentUpon>AddReward.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="auth.resx">
+      <DependentUpon>auth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="class.resx">
+      <DependentUpon>class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="club.resx">
+      <DependentUpon>club.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="events.resx">
+      <DependentUpon>events.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="learners.resx">
+      <DependentUpon>learners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="База_данныхDataSet1.xsc">
+      <DependentUpon>База_данныхDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>База_данныхDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="База_данныхDataSet1.xss">
+      <DependentUpon>База_данныхDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet11.xsc">
+      <DependentUpon>База_данныхDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>База_данныхDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="База_данныхDataSet11.xss">
+      <DependentUpon>База_данныхDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet18.xsc">
+      <DependentUpon>База_данныхDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>База_данныхDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="База_данныхDataSet18.xss">
+      <DependentUpon>База_данныхDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet2.xsc">
+      <DependentUpon>База_данныхDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>База_данныхDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="База_данныхDataSet2.xss">
+      <DependentUpon>База_данныхDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet24.xsc">
+      <DependentUpon>База_данныхDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>База_данныхDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="База_данныхDataSet24.xss">
+      <DependentUpon>База_данныхDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet3.xsc">
+      <DependentUpon>База_данныхDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>База_данныхDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="База_данныхDataSet3.xss">
+      <DependentUpon>База_данныхDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet4.xsc">
+      <DependentUpon>База_данныхDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>База_данныхDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="База_данныхDataSet4.xss">
+      <DependentUpon>База_данныхDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet5.xsc">
+      <DependentUpon>База_данныхDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>База_данныхDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="База_данныхDataSet5.xss">
+      <DependentUpon>База_данныхDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet6.xsc">
+      <DependentUpon>База_данныхDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>База_данныхDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="База_данныхDataSet6.xss">
+      <DependentUpon>База_данныхDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet7.xsc">
+      <DependentUpon>База_данныхDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="База_данныхDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>База_данныхDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="База_данныхDataSet7.xss">
+      <DependentUpon>База_данныхDataSet7.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accesssystem_783.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userpassword_deusuari_787.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_password_lock_800.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3069184-bag-business-case-management_112719.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\university_cap_icon-icons.com_66109.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3069187-achivement-business-mission-winner_112709.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3069189-design-education-learning-pencil-tool_112718.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark-circled_icon-icons.com_50431.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\menu.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3069188-achivement-mission-sport-winner_112715.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loop_icon-icons.com_50105.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
